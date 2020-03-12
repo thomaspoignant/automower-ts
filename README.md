@@ -1,4 +1,5 @@
 # automower
+[![Build Status](https://travis-ci.com/thomaspoignant/automower-ts.svg?branch=master)](https://travis-ci.com/thomaspoignant/automower-ts) [![Coverage Status](https://coveralls.io/repos/github/thomaspoignant/automower-ts/badge.svg?branch=master)](https://coveralls.io/github/thomaspoignant/automower-ts?branch=master)
 
 ## TL;DR
 To run this test, clone the projet and run 
