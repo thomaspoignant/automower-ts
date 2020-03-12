@@ -44,5 +44,5 @@ LFLFLFLFF
 3 3 E  
 FFRFFRFRRF  
 **result**  
-1 3 N 
+1 3 N  
 5 1 E
