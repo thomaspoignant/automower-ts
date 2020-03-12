@@ -12,6 +12,7 @@
     "@types/node": "^13.9.0",
     "@typescript-eslint/eslint-plugin": "^2.23.0",
     "@typescript-eslint/parser": "^2.23.0",
+    "coveralls": "^3.0.9",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
@@ -38,6 +39,7 @@
     "watch": "tsc-watch --onSuccess \"node ./.dist/index.js\"",
     "compile": "tsc -p .",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   }
 }
