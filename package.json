@@ -1,0 +1,44 @@
+{
+  "name": "automatic_mower",
+  "version": "1.0.0",
+  "description": "Automatic lawn mower designed to mow rectangular surfaces.",
+  "main": "index.js",
+  "author": "Thomas Poignant <thomas.poignant@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/line-reader": "^0.0.28",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-chai-expect": "^2.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-json": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^25.1.0",
+    "mocha": "^7.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "line-reader": "^0.4.0",
+    "lodash": "^4.17.15"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "start": "yarn compile && node ./.dist/src/index.js",
+    "watch": "tsc-watch --onSuccess \"node ./.dist/index.js\"",
+    "compile": "tsc -p .",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  }
+}

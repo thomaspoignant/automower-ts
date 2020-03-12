@@ -1,0 +1,16 @@
+# ignore IDE config files
+.idea
+*.iml
+
+# ignore build dist directory
+.dist
+
+# Dependency directory
+node_modules
+bower_components
+
+# log files
+*.log
+
+# coverage file
+coverage
