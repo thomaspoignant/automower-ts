@@ -72,7 +72,7 @@ export default function extractFile(filePath: string): Map<AutoMower, Array<Move
     const autoMower = autoMowerFromLine(autoMowerConfig);
     autoMower.garden = garden;
 
-    const movementConfig = otherLines[iterator];
+    const movementConfig = otherLines[iterator + 1];
     const movements = movementsFromLine(movementConfig);
     autoMowers.set(autoMower, movements);
     iterator += 2;
